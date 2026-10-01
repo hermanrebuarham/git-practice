@@ -9,9 +9,9 @@ import yaml
 
 def read_config(path: Path) -> dict:
     """Read the YAML settings file and return it as a dictionary."""
-    # "with" opens the file and closes it automatically afterwards
+    # with opens the file and closes it automatically afterwards
     with path.open() as f:
-        # safe_load turns the YAML text into a Python dictionary
+        # safe_load turns the YAML text into a python dictionary
         return yaml.safe_load(f)
 
 
